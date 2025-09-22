@@ -195,13 +195,15 @@ function BirthdayApp() {
                 e('h2', { className: 'section-title' }, '💌 A Special Letter For You 💌'),
                 e('div', { className: 'letter-container' },
                     e('div', { className: 'letter-content' },
-                        e('p', { className: 'letter-greeting' }, 'My Dearest Beautiful,'),
+                        e('p', { className: 'letter-greeting' }, ',סוויטי שילי'),
                         e('div', { className: 'letter-text' },
-                            e('p', null, 'Today marks another year of your incredible journey, and I feel so grateful to be part of it. 💕'),
-                            e('p', null, 'Every moment with you is a treasure, every laugh we share is music to my soul, and every day you make my world brighter just by being in it. ✨'),
-                            e('p', null, 'On this special day, I want you to know how much you mean to me. Your kindness, your smile, your amazing heart - everything about you makes life more beautiful. 🌟'),
-                            e('p', null, 'I hope this new year of your life brings you all the happiness, love, and dreams come true that you deserve. You are absolutely wonderful, and I\'m so lucky to have you. 💖'),
-                            e('p', null, 'Happy Birthday, my love! Here\'s to many more celebrations together! 🎉')
+                            e('p', null, '❤️יום הולדת 19 שמח אהובה שלי 💕'),
+                            e('p', null, 'את כבר לא בת 18, אבל אל דאגה – אני עדיין נותן לך להתפנק'),
+                            e('p', null, ' מאחל לך שנה מלאה בחיוכים, אהבה וחלומות שמתגשמים. תמשיכי להיות האור שלי, וויטי שלי, והבחורה הכי מדהימה בעולם. 💖🌟'),
+                            e('p', null, ',ולבסוף חשבת זה יהיה רק האתר הזה... לא ולא'),
+                            e('p', null, 'אני מכין לך משהו יותר גדול ויפה'),
+                            e('p', null, 'תהיי מוכנה בתאריך 4.10 בשעה 18:00 פרטים בהמשך'),
+                            e('p', null, 'אני אוהב אותך עד השמיים ובחזרה! 🌈🚀')
                         ),
                         e('p', { className: 'letter-signature' }, 'With all my love,\nYour devoted admirer 💕')
                     )
