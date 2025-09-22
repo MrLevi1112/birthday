@@ -3,18 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Beautiful! 🎉</title>
-    <link rel="stylesheet" href="birthday-styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Birthday Website - Welcome! 🎉</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 60px 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            max-width: 600px;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff6b9d, #ee5a6f);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: -1;
+        }
+        
+        .heart {
+            position: absolute;
+            color: rgba(255, 182, 193, 0.6);
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10%, 90% { opacity: 1; }
+            50% { transform: translateY(-10vh) rotate(180deg); }
+        }
+    </style>
 </head>
 <body>
-    <div id="root"></div>
+    <div class="hearts">
+        <div class="heart" style="left: 10%; animation-delay: 0s; font-size: 20px;">💖</div>
+        <div class="heart" style="left: 20%; animation-delay: 1s; font-size: 25px;">💕</div>
+        <div class="heart" style="left: 30%; animation-delay: 2s; font-size: 18px;">💖</div>
+        <div class="heart" style="left: 40%; animation-delay: 3s; font-size: 22px;">💕</div>
+        <div class="heart" style="left: 50%; animation-delay: 4s; font-size: 20px;">💖</div>
+        <div class="heart" style="left: 60%; animation-delay: 5s; font-size: 24px;">💕</div>
+        <div class="heart" style="left: 70%; animation-delay: 1.5s; font-size: 19px;">💖</div>
+        <div class="heart" style="left: 80%; animation-delay: 2.5s; font-size: 21px;">💕</div>
+        <div class="heart" style="left: 90%; animation-delay: 3.5s; font-size: 23px;">💖</div>
+    </div>
     
-    <!-- React CDN -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    
-    <!-- Our Birthday App -->
-    <script src="birthday-app.js"></script>
+    <div class="container">
+        <h1>🎉 Welcome! 🎂</h1>
+        <p>Click below to enter the special birthday celebration!</p>
+        <a href="girlfriend-birthday.html" class="btn">Enter Birthday Website ✨</a>
+    </div>
 </body>
 </html>
